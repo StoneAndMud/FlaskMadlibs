@@ -1,0 +1,11 @@
+{% extends 'base.j2' %}
+{% block title %}Story{% endblock %}
+{% block content%}
+<h1>Your Madlib Story</h1>
+
+{% if(place and noun and verb and adjective and plural_noun) %}
+<p>{{my_story}}</p>
+{% else %}
+<p>Missing Data! Go Back To The Form!</p>
+{% endif %}
+{% endblock %}

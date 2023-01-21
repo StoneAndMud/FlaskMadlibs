@@ -1,0 +1,18 @@
+{% extends 'base.j2' %}
+{% block title %}Madlib Form V2{% endblock %}
+{% block content %}
+<h1>Madlib Form</h1>
+<form action="/story">
+  <label for="place">Place:</label>
+  <input type="text" name="place" placeholder="place" />
+  <label for="noun">Noun:</label>
+  <input type="text" name="noun" placeholder="noun" />
+  <label for="verb">Verb:</label>
+  <input type="text" name="verb" placeholder="verb" />
+  <label for="adjective">Adjective:</label>
+  <input type="text" name="adjective" placeholder="adjective" />
+  <label for="plural_noun">Plural noun:</label>
+  <input type="text" name="plural_noun" placeholder="plural noun" />
+  <button>Submit Madlib!</button>
+</form>
+{% endblock %}
